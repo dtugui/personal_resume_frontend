@@ -20,8 +20,4 @@ export default {
   created: function() {},
   methods: {},
 };
-<<<<<<< HEAD
 </script>
-=======
-</script>
->>>>>>> ff87d64fe51b5d3a27d1aee6feacf999283ef521
