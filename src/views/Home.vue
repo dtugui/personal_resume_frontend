@@ -2,6 +2,7 @@
   <div class="home">
     <h1>{{ message }}</h1>
     <h1>Hi from Tom!</h1>
+    <h2>hi from Eden...</h2>
   </div>
 </template>
 
