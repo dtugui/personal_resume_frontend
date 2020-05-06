@@ -90,7 +90,12 @@ export default {
         resume_url: this.student.resume_url,
         github_url: this.student.github_url,
         photo: this.student.photo,
+        experiences: this.student.experiences,
+        educations: this.student.educations,
+        skills: this.student.skills,
+        projects: this.student.projects,
       };
+
       axios
         .patch("/api/students/" + this.$route.params.id, params)
         .then(response => {
