@@ -3,11 +3,8 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
-<<<<<<< HEAD
 import StudentUpdate from "../views/StudentUpdate.vue";
-=======
 import Logout from "../views/Logout.vue";
->>>>>>> be32143e05b4fa2a6124fba6e884594e58bf77ca
 
 Vue.use(VueRouter);
 
@@ -27,11 +24,8 @@ const routes = [
   },
   { path: "/signup", name: "signup", component: Signup },
   { path: "/login", name: "login", component: Login },
-<<<<<<< HEAD
   { path: "/students/:id/edit", name: "StudentUpdate", component: StudentUpdate },
-=======
   { path: "/logout", name: "logout", component: Logout },
->>>>>>> be32143e05b4fa2a6124fba6e884594e58bf77ca
 ];
 
 const router = new VueRouter({
