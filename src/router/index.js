@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
 import StudentUpdate from "../views/StudentUpdate.vue";
+import StudentShow from "../views/StudentShow.vue";
 import Logout from "../views/Logout.vue";
 
 Vue.use(VueRouter);
@@ -25,6 +26,7 @@ const routes = [
   { path: "/signup", name: "signup", component: Signup },
   { path: "/login", name: "login", component: Login },
   { path: "/students/:id/edit", name: "StudentUpdate", component: StudentUpdate },
+  { path: "/students/:id", name: "student-show", component: StudentShow },
   { path: "/logout", name: "logout", component: Logout },
 ];
 
