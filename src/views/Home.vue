@@ -1,9 +1,18 @@
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
-    <h2>Hey there!</h2>
-    <h1>Hi from Tom!</h1>
-    <h2>hi from Eden...</h2>
+    <h2>The Blue Team:</h2>
+    <p>
+      Ethan,
+      Ryan,
+      Travell,
+      Tom,
+      Eden,
+      Diana,
+      Ernesto,
+      Dan Clair,
+      Tony
+    </p>
   </div>
 </template>
 
@@ -13,7 +22,7 @@
 export default {
   data: function() {
     return {
-      message: "Welcome to Resumes!",
+      message: "Welcome to the Resume App!",
     };
   },
   created: function() {},
