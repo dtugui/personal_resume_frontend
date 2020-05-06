@@ -11,15 +11,18 @@
     <p>Twitter: {{ student.twitter_url }}</p>
     <p>Github: {{ student.github_url }}</p>
     <br />
-    <p>Skill: {{ skill.skill_name }}</p>
+    <h3>Skills</h3>
+    <p>{{ student.skills }}</p>
     <br />
-    <p>Start Date: {{ experience.start_date }}</p>
-    <p>End Date: {{ experience.end_date }}</p>
-    <p>Job Title: {{ experience.job_title }}</p>
-    <p>Company: {{ experience.company_name }}</p>
-    <ul>
-      <li>{{ experience.details }}</li>
-    </ul>
+    <h3>Experiences</h3>
+    {{ student.experiences }}
+    <br />
+    <h3>Education</h3>
+    <p>{{ student.educations }}</p>
+    <br />
+    <h3>Projects</h3>
+    <p>{{ student.projects }}</p>
+    <br />
 
     <a v-bind:href="`/students/${student.id}/edit`">Edit Your Resume</a>
   </div>
@@ -34,10 +37,14 @@ export default {
       student: {},
       skill: {},
       experience: {},
+      education: {},
     };
   },
   created: function() {
     this.showStudent();
+    this.showSkill();
+    this.showExperience();
+    this.showEducation();
   },
   methods: {
     showStudent: function() {
@@ -55,6 +62,12 @@ export default {
     showExperience: function() {
       axios.get("/api/students/" + this.$route.params.id).then(response => {
         console.log("Get one student's experience: ", response);
+        this.student = response.data;
+      });
+    },
+    showEducation: function() {
+      axios.get("/api/students/" + this.$route.params.id).then(response => {
+        console.log("Get one student's education: ", response);
         this.student = response.data;
       });
     },
