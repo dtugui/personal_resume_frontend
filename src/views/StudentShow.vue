@@ -2,6 +2,7 @@
   <div>
     <h1>Resume</h1>
     <img v-bind:src="student.photo" alt="" />
+    <h3>Information</h3>
     <p>First Name: {{ student.first_name }}</p>
     <p>Last Name: {{ student.last_name }}</p>
     <p>Email: {{ student.email }}</p>
