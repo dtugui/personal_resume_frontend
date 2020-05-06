@@ -7,11 +7,11 @@
           <ul>
           </ul>
             <li class="text-danger" v-for="error in errors">{{ error }}</li>
-            <label>First Name:</label>
           <div class="form-group">
+            <label>First Name:</label>
+            <input type="text" class="form-control" v-model="student.first_name" />
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" v-model="student.first_name" />
             <label>Last Name:</label>
             <input type="text" class="form-control" v-model="student.last_name" />
           </div>
@@ -51,6 +51,7 @@
             <label>Photo:</label>
             <input type="text" class="form-control" v-model="student.photo" />
           </div>
+
           <input type="submit" class="btn btn-primary" value="Submit" />
         </div>
       </form>
