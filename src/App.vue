@@ -9,6 +9,7 @@
       <router-link to="/logout">Logout</router-link> |
       <router-link to="/students">Create New Resume</router-link> |
 
+
     </div>
     <router-view />
   </div>

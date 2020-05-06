@@ -13,6 +13,7 @@
       Dan Clair,
       Tony
     </p>
+
   </div>
 </template>
 
@@ -22,7 +23,7 @@
 export default {
   data: function() {
     return {
-      message: "Welcome to the Resume App!",
+      message: "Welcome to Your Resume Platform!",
     };
   },
   created: function() {},

@@ -20,7 +20,7 @@
         </div>
         <div class="form-group">
           <label>Password confirmation:</label>
-          <input type="text" class="form-control" v-model="passwordConfirmation" />
+          <input type="text" class="form-control" v-model="password" />
         </div>
         <input type="submit" class="btn-primary" value="Submit" />
       </form>
@@ -47,7 +47,7 @@ export default {
         name: this.name,
         email: this.email,
         password: this.password,
-        password_confirmation: this.passwordConfirmation,
+        password_confirmation: this.password,
       };
       axios
         .post("/api/users", params)
