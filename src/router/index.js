@@ -6,6 +6,7 @@ import Login from "../views/Login.vue";
 import StudentUpdate from "../views/StudentUpdate.vue";
 import StudentShow from "../views/StudentShow.vue";
 import Logout from "../views/Logout.vue";
+import StudentNew from "../views/StudentNew.vue";
 
 Vue.use(VueRouter);
 
@@ -25,9 +26,10 @@ const routes = [
   },
   { path: "/signup", name: "signup", component: Signup },
   { path: "/login", name: "login", component: Login },
-  { path: "/students/:id/edit", name: "StudentUpdate", component: StudentUpdate },
-  { path: "/students/:id", name: "student-show", component: StudentShow },
   { path: "/logout", name: "logout", component: Logout },
+  { path: "/students", name: "new", component: StudentNew },
+  { path: "/students/:id", name: "student-show", component: StudentShow },
+  { path: "/students/:id/edit", name: "StudentUpdate", component: StudentUpdate },
 ];
 
 const router = new VueRouter({
