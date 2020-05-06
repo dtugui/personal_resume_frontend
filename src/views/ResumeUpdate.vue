@@ -72,7 +72,7 @@ export default {
     };
   },
   created: function() {
-    axios.get("/api/student/" + this.$route.params.id).then(response => {
+    axios.get("/api/students/" + this.$route.params.id).then(response => {
       this.student = response.data;
     });
   },
@@ -92,9 +92,9 @@ export default {
         photo: this.student.photo,
       };
       axios
-        .patch("/api/student/" + this.$route.params.id, params)
+        .patch("/api/students/" + this.$route.params.id, params)
         .then(response => {
-          this.$router.push("/student");
+          this.$router.push("/students");
         })
         .catch(error => {
           this.errors = error.response.data.errors;
